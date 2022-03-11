@@ -6,13 +6,12 @@ import Wallet from './pages/Wallet';
 class App extends React.Component {
   render() {
     return (
-      <>
-        <div>Hello, TrybeWallet!</div>
+      <div>
         <Switch>
           <Route exact path="/" component={ Login } />
           <Route path="/carteira" component={ Wallet } />
         </Switch>
-      </>
+      </div>
     );
   }
 }
